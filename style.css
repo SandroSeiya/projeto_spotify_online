@@ -1,0 +1,442 @@
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, .capa{
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    color: #000;
+}
+
+#body-home{
+    background-image: url("imagens/capa.png"),
+                url("imagens/ruido.png"),
+                linear-gradient(60deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/*PREMIUM*/
+#fundo-premium{
+    background-image:url("imagens/premium-full.jpg");
+    /*background-color: #000;*/
+    /*linear-gradient(60deg, #ff4169, #7c26f8);*/
+    background-size: cover;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    /*width: 100%;*/
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
+    /*background-position-x: center;*/
+    /*background-position-y: center;*/
+    padding: 60px 0px 0px 30px;
+}
+
+/*PREMIUM*/
+
+
+.benefit-image {
+    height: 226px;
+    width: 226px;
+    margin: 0 auto 24px;
+}
+
+.img-logo{
+    height: 40px;
+    width: 132px;
+    display:block;
+    background: url('imagens/spotify.svg') no-repeat;
+    /*border:1px solid red;*/
+    -webkit-background-size: contain;
+    background-size: contain;
+    color:transparent;
+}
+
+.navbar-transparente {
+    padding: 13px 0;
+    background: rgba(0,0,0, 0.6);
+    border: none;
+}
+
+.navbar-transparente-premium{
+    padding: 13px 0;
+    background: rgba(0,0,0, 0.0);
+    border: none;
+    transition: background-color 0.4s ease;
+}
+
+.navbar-transparente-premium.scrolled {
+    background: rgba(0,0,0, 0.8)!important;
+}
+
+/*/-----------------*!!PREMIUM*-----------------/*/
+
+/*/----------------CONTEUDO PREMIUM---------------/*/
+
+@media (min-width: 768px){
+    .shelves {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.conteudo{
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#cartao-esquerda{
+    background-image: url(imagens/BR_Boleto_100.jpg);
+    padding-bottom: 120px;
+    background-position: 50% 95%;
+    background-color: #DED301;
+    margin-left: 16px;
+}
+
+#cartao-direita{
+    background-image: url(imagens/shelf21.png);
+    padding-bottom: 120px;
+    background-position: 50% 95%;
+    background-color: #1E3264;
+    margin-left: 12px;
+    margin-right: 16px;
+}
+
+.shelf{
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px 48px 80px;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.cartao-header{
+    color: white;
+
+    text-align: center;
+
+
+}
+
+.headline{
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.subheadline{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.01em;
+}
+
+/*------------BENEFICIOS--------------*/
+
+.jumbo-beneficios{
+    text-align: center;
+    color: #000;
+    padding: 16px 0 64px;
+}
+
+.headline-beneficio{
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.titulo-beneficio{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 12px;
+}
+
+.corpo-beneficio{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    font-weight: 400;
+    color: #575757;
+    margin: 0;
+}
+
+
+
+/*-------------FIM-BENEFICIOS------------*/
+
+/*!------------CONTEUDO HOME-------------------!*/
+
+.divisor{
+    width: 1px;
+    height: 13px;
+    color: white;
+    margin: 8px 10px;
+}
+
+.navbar-dark .navbar-nav .nav-item>a, footer .nav a {
+    color: white;
+}
+
+
+.navbar-dark .navbar-nav .nav-item>a:hover, footer .nav a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+
+@media (max-width: 767px){
+    .divisor{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        /*color: white;*/
+        margin-left: 15px;
+    }
+}
+
+/*botões*/
+.btn-custom {
+    color: white;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    padding: 10px 30px;
+    margin: 0 18px;
+    text-transform: uppercase;
+    -webkit-transition: 0.4s, color 0.4s;
+    -moz-transition: 0.4s, color 0.4s;
+    -o-transition: 0.4s, color 0.4s;
+    transition: 0.4s, color 0.4s;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn-roxo {
+    background-color: #7c25f8;
+}
+
+.btn-roxo:hover {
+    background-color: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+    /*//background-color: rgba;*/
+}
+
+.btn-branco:hover{
+    color: black;
+    background: #ffffff;
+}
+
+.btn-verde{
+    color: white;
+    background: #1DB954;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin: 10px 0px 50px 0px;
+    padding: 15px 45px 15px 45px;
+}
+
+.btn-verde:hover{
+    color: white;
+    background-color: #1ED760;
+}
+
+.btn-rosa{
+    color: white;
+    background: #D6236B;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 44px 12px;
+}
+
+.btn-rosa:hover{
+    color:white;
+
+}
+
+.btn-pele{
+    color: #1E3264;
+    background: #B49BC8;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin: 10px 0px 0px 0px;
+    padding: 12px 44px 12px;
+    font-weight: bolder;
+}
+
+.btn-pele:hover{
+    color: #1E3264;
+}
+
+
+/*Serviços*/
+#servicos{
+    background: white;
+    padding: 20px 0 20px 0;
+}
+
+.albuns{
+    padding: 10px 0 10px 0;
+}
+
+/*recursos*/
+#recursos{
+    padding: 20px 0 20px 0;
+}
+
+.rotacionar {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+.albuns{
+    padding: 10px 0 10px 0;
+}
+
+/*Rodapé*/
+
+footer{
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+/*.item-rede-social{*/
+    /*float: right;*/
+/*}*/
+
+
+/*Imagem de capa*/
+.capa{
+    display: table;
+    width: 100%;
+}
+
+.texto-capa {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*CAPA PREMIUM*/
+.texto-capa-premium{
+    text-align: left;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.texto-premium-rodape{
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    margin: 0 auto 32px;
+    margin-top: 25px;
+    color: white;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+/*PREMIUM TERMS AND SERVICES CONFIGURAR*/
+#fundo-premium .texto-premium-rodape a{
+    text-decoration: underline;
+    color: #2EBD59;
+}
+
+
+/*tipografia*/
+
+h1 {
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: -0.07em;
+    margin-bottom: 50px;
+
+}
+
+.texto-capa-premium h1{
+    margin-top: 30px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: white;
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#h3-sub-premium{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.25px;
+    font-weight: 900;
+    margin: 12px 0 12px;
+}
+
+/*nav links*/
+.navbar .navbar-nav .nav-item a{
+    font-weight: bold;
+    padding: 10px 15px 0px 15px;
+}
+
+#servicos h2, #servicos h3{
+    color: #7c25f8;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+#recursos p{
+    font-size: 18px;
+    font-weight: bolder
+}
+
+footer .nav-title {
+    color: #919496;
+    font-size: 12px;
+
+    text-transform: uppercase;
+}
+
+footer .nav a{
+    padding: 0 8px;
+}

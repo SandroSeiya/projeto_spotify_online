@@ -1,0 +1,317 @@
+html, body, .capa{
+    height: 100%;
+}
+
+
+
+#body-premium{
+    background: url('imagens/premium-full.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+#body-home{
+    background: url('imagens/capa.png'),
+    url('imagens/ruido.png'),
+    linear-gradient(#ff4269, #7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand{
+    padding: 0 15px;
+}
+
+/* Barra de Navegação*/
+.img-logo{
+    height: 40px;
+    width: 132px;
+    display: block;
+    background: url('imagens/spotify.svg') no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+.navbar-transparent{
+    padding: 15px 0;
+    background: rgba(0,0,0, 0.6);
+    border: none;
+}
+
+nav #navbar-transparent-premium{
+    padding: 15px 0;
+    background: rgba(0,0,0, 0.0);
+    border: none;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease ;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease ;
+}
+.divisor{
+    width: 1px;
+    height: 8px;
+    margin: 8px 10px;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-item>a, footer .nav a{
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-item>a:hover, footer .nav a:hover{
+    color: #00ffff;
+    background: none;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav .nav-item a{
+    font-weight: bold;
+}
+
+.menu-diferente{
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease ;
+}
+
+@media(max-width: 768px){
+    .divisor{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        margin-left: 20px;
+    }
+}
+/* Premium*/
+.shelves{
+    padding: 40px 24px;
+    background: #FFF;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.shelves > .shelf{
+    background-repeat: no-repeat;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    padding: 40px 48px 80px;
+    min-height: 440px;
+    margin-right: 10px;
+}
+
+/* Imagem de Capa*/
+
+.capa{
+    display: table;
+    width: 100%;
+}
+
+
+
+/* Botões */
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.btn-capa-premium{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 12px 50px;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-rosa-fraco{
+    background: #B49BC8;
+    color: black;
+}
+
+.btn-rosa-fraco:hover{
+    color: black;
+
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background: white;
+    color: #000;
+}
+
+.btn-verde{
+    background: #1DB954;
+}
+
+.btn-rosa{
+    background-color: #D6236B;
+}
+
+.btn-rosa:hover{
+    color: white;
+}
+
+.btn-verde:hover{
+    background: #1ed760;
+    color: white;
+}
+
+
+/* secao servicos */
+
+#services{
+    background: white;
+    padding: 20px 0;
+}
+
+.albuns{
+    padding: 10px 0;
+}
+
+/* recursos*/
+
+#recursos{
+    padding: 20px 0;
+    color: white;
+}
+
+.rotacionar {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: 40px;
+    margin-top: 40px;
+
+}
+
+#recursos img{
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+
+/* rodape */
+footer{
+    background: #000;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+
+footer img{
+    padding: 20px;
+}
+
+
+/*================= Tipografia==================*/
+
+h1{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em ;
+}
+
+#rodape h4{
+    color: grey;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#services h2, #services h3{
+    color: #7c25f8;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+.texto-capa{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.texto-capa-premium{
+    text-align: left;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 60px 0 20px 0;
+}
+
+.texto-capa-premium h1{
+    margin-bottom: 10px;
+}
+
+.paragrafo-capa-premium{
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.paragrafo-capa-premium a{
+    color: #1ed760;
+    text-decoration: underline;
+}
+
+.article-title{
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.text-article{
+    margin: 0;
+    font-size: 18px;
+    display: block;
+}
+
+.text-cont{
+    font-size: 10px;
+    letter-spacing: -1em;
+    text-align: center;
+}

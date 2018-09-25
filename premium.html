@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Música para todos - Spotify (Just learning some WebDev)</title>
+    <link rel="icon" href="imagens/favicon.png">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark navbar-transparente-premium">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a href="index.html" class="navbar-brand">
+                    <span class="img-logo">Spotify</span>
+                </a>
+            </div>
+
+            <!--botao toggle-->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#barra-navegacao">
+                <span class="sr-only">Alternar navegação</span>
+                <span class="fas fa-bars"></span>
+            </button>
+
+            <!--navbar-->
+            <div class="collapse navbar-collapse" id="barra-navegacao">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Premium</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ajuda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Baixar</a></li>
+                    <li class="divisor">|</li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inscrever</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Entrar</a></li>
+                </ul>
+            </div>
+
+        </div> <!-- container-->
+    </nav><!--nav-->
+
+<div id="fundo-premium">
+    <div class="container">
+        <!--capa-->
+        <div class="capa">
+            <div class="texto-capa-premium">
+                <h1>Aproveite 2 meses de Spotify Premium grátis</h1>
+                <h3 id="h3-sub-premium">Ser Premium é... Ouvir todas as músicas que quiser, sempre que quiser.</h3>
+                <a href="" class="btn btn-lg btn-custom btn-verde">Seja Premium</a>
+            </div>
+
+        </div><!--capa-->
+        <p class="texto-premium-rodape">Para usuários que nunca foram Premium.Sujeito a <a href="#">termos e condições</a>. Após, R$ 16,90/mês</p>
+    </div> <!--container-->
+</div>
+
+
+    <!--CONTEUDO PREMIUM-->
+<div id="conteudo">
+    <div class="container-fluid">
+        <article class="shelves">
+            <aside class="shelf" id="cartao-esquerda">
+                <div class="content">
+                    <header class="cartao-header">
+                        <h1 class="headline">Não tem cartão?</h1>
+                        <p class="subheadline">Experimente 2 meses de Premium pelo preço de 1 com boleto.</p>
+                    </header>
+                    <a href="#" class="btn btn-lg btn-custom btn-rosa">Seja Premium</a>
+                    <p class="texto-premium-rodape">Para usuários que nunca foram Premium. Sujeto a termos e condições.</p>
+                </div>
+            </aside>
+
+            <aside class="shelf" id="cartao-direita">
+                <div class="content">
+                    <header class="cartao-header">
+                        <h1 class="headline">Spotify Premium para Universitários</h1>
+                        <p class="subheadline">Aproveite 3 meses do Spotify Premium para Universitários por apenas R$ 1,99. A oferta termina em breve.</p>
+                    </header>
+                    <a href="#" class="btn btn-lg btn-custom btn-pele">Saiba mais</a>
+                    <p class="texto-premium-rodape">Disponível apenas para estudantes do ensino superior que não tenham experimentado o Premium. A oferta termina no dia 25/10/2018. Sujeito a termos e condições.</p>
+                </div>
+            </aside>
+        </article>
+    </div>
+</div>
+
+
+<!--BENEFICIOS-->
+<div id="bloco-beneficios" class="jumbo-beneficios">
+    <div class="container">
+        <h1 class="headline-beneficio">Por que ser Premium?</h1>
+        <div class="row">
+            <div class="beneficios col-xs-12 col-sm-6 col-md-3">
+                <div class="benefit-image ">
+                        <svg width="100%" height="100%" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g>
+                                    <circle fill="#f8f8f8" cx="121" cy="121" r="121"></circle>
+                                    <path d="M193.856395,73 L65.7502091,184.056671 L72.1720246,140.390275 L17,183.114996 C38.1812298,217.747825 77.5177994,242.549091 121.447281,241.99076 C147.290902,241.662295 173.494371,232.041242 190.241868,220.52597 L204,164.89535 L164.324412,188.522035 L193.856395,73 Z" fill="#fff" transform="translate(110.500000, 157.500000) rotate(-360.000000) translate(-110.500000, -157.500000)"></path>
+                                    <path d="M156,81 L106.215575,89.1666099 L105.703578,102.865439 L104.263588,141.379252C102.321261,139.470688 99.6972784,138.253271 96.7726186,138.141933 C90.5115279,137.904655 85.2442421,142.827254 85.0081681,149.136405 C84.772698,155.446166 89.657194,160.753884 95.9188884,160.99177 C102.180583,161.229048 107.447869,156.306449 107.683339,149.997297 C107.696018,149.654157 107.691188,149.315276 107.674282,148.979437 L109.358799,103.914328 L151.735575,96.9627015 L150.381924,133.181613 C148.435371,131.247496 145.793275,130.011827 142.846276,129.899881 C136.584581,129.662603 131.317295,134.584593 131.081825,140.894353 C130.845751,147.204114 135.730851,152.511832 141.992546,152.74911 C148.236731,152.986387 153.490734,148.091167 153.753373,141.80696 C153.756996,141.75342 155.512758,94.7651455 155.512758,94.7651455 L156,81 Z" fill="#000"></path>
+                                    <path d="M73,120.621221 C60.8498889,120.621221 51,110.906262 51,98.9225908 C51,86.9389196 60.8498889,77.2239606 73,77.2239606 C85.1501111,77.2239606 95,86.9389196 95,98.9225908 C95,110.906262 85.1501111,120.621221 73,120.621221 Z" fill="#000"></path>
+                                    <g transform="translate(65.000000, 89.000000)" stroke="#fff" stroke-width="4.84" stroke-linecap="round">
+                                        <path d="M8,0.881434619 L8,16.5526675"></path>
+                                        <polyline points="0.666666667 12.3334894 8 19.5663661 15.3333333 12.3334894"></polyline>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                <!--Texto beneficio-->
+                <h2 class="titulo-beneficio">
+                    Baixe suas músicas.
+                </h2>
+                <p class="corpo-beneficio">Ouça onde quiser.</p>
+            </div>
+            <div class="beneficios col-xs-12 col-sm-6 col-md-3">
+                <div class="benefit-image">
+                    <svg width="100%" height="100%" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g>
+                                <circle fill="#f8f8f8" cx="121" cy="121" r="121"></circle>
+                                <g transform="translate(51.000000, 50.000000)">
+                                    <path d="M13.2758621,6.05678233e-05 C5.80215517,6.05678233e-05 0,5.82365678 0,13.3249817 L0,168.984288 C3.05646552,171.173209 6.39594828,173.74613 9.65517241,175.646748 C32.1058621,181.005789 48.1117241,184.000868 70.1780172,184.000868 C92.2425,184.000868 106.06931,183.384288 130.948276,175.848439 C134.208707,173.947215 136.942328,172.385777 140,170.195644 L140,13.9306599 C140,6.42933502 134.197241,6.05678233e-05 126.724138,6.05678233e-05 L13.2758621,6.05678233e-05 Z" fill="#509bf5"></path>
+                                    <path d="M130.948276,36.3407546 L10.2586207,36.3407546 L10.2586207,175.848439 C28.0543103,186.225524 48.5401724,192.000061 70.6034483,192.000061 C92.667931,192.000061 113.151983,186.226736 130.948276,175.848439 L130.948276,36.3407546 Z" fill="#fff"></path>
+                                    <path d="M81.4655172,21.1987987 L59.7413793,21.1987987 C58.7414655,21.1987987 57.9310345,20.3853729 57.9310345,19.381764 C57.9310345,18.3781552 58.7414655,17.5647293 59.7413793,17.5647293 L81.4655172,17.5647293 C82.465431,17.5647293 83.2758621,18.3781552 83.2758621,19.381764 C83.2758621,20.3853729 82.465431,21.1987987 81.4655172,21.1987987" fill="#fff"></path>
+                                </g>
+                                <g transform="translate(74.000000, 125.000000)">
+                                    <path d="M84.9615385,77 L9.03846154,77 C3.71360256,77 0,72.6910078 0,67.375 L0,9.625 C0,4.30899219 3.71360256,0 9.03846154,0 L84.9615385,0 C90.2863974,0 94,4.30899219 94,9.625 L94,67.375 C94,72.6910078 90.2863974,77 84.9615385,77" fill="#000"></path>
+                                    <polygon fill="#fff" points="51.2179487 46.921875 44.5897436 46.921875 42.1794872 15.640625 53.6282051 15.640625"></polygon>
+                                    <path d="M53.025641,56.8476562 C53.025641,54.0239219 50.7322821,51.734375 47.9038462,51.734375 C45.0754103,51.734375 42.7820513,54.0239219 42.7820513,56.8476562 C42.7820513,59.6713906 45.0754103,61.9609375 47.9038462,61.9609375 C50.7322821,61.9609375 53.025641,59.6713906 53.025641,56.8476562" fill="#fff"></path>
+                                </g>
+                                <g transform="translate(165.000000, 64.000000)">
+                                    <path d="M44,22 C44,34.1501111 34.1501111,44 22,44 C9.84988889,44 0,34.1501111 0,22 C0,9.84988889 9.84988889,0 22,0 C34.1501111,0 44,9.84988889 44,22" fill="#000"></path>
+                                    <path d="M14.0555556,14.0555556 L29.5075,29.5075" stroke="#fff" stroke-width="4.84" stroke-linecap="round"></path>
+                                    <path d="M14.0555556,29.5074389 L29.5075,14.0554944" stroke="#fff" stroke-width="4.84" stroke-linecap="round"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <!--Texto beneficio-->
+                <h2 class="titulo-beneficio">
+                    Sem anúncios.
+                </h2>
+                <p class="corpo-beneficio">Escuta música sem parar.</p>
+            </div>
+            <div class="beneficios col-xs-12 col-sm-6 col-md-3">
+                <div class="benefit-image ">
+                    <svg width="100%" height="100%" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g>
+                                    <circle fill="#f8f8f8" cx="121" cy="121" r="121"></circle>
+                                    <path d="M97.546678,144.176199 C97.7625034,156.095966 89.5561398,166.879969 77.5139688,169.443343 C63.8609432,172.349706 50.4473446,163.587605 47.5541213,149.872133 C44.660898,136.157101 53.3838221,122.682583 67.0368478,119.77622 C69.2064577,119.314368 71.3700216,119.147186 73.4862828,119.247721 C71.48627,115.150233 69.9527967,110.740732 68.9680372,106.072906 C62.542827,75.6140256 81.9137043,45.6905976 112.234877,39.2362065 C142.555176,32.7818154 172.343754,52.2406678 178.769402,82.6991089 C185.194612,113.157111 165.823298,143.081417 135.502999,149.535808 C122.087426,152.391547 108.776199,150.174394 97.546678,144.176199 Z" fill="#fff"></path>
+                                    <g transform="translate(44.000000, 98.000000)">
+                                        <path d="M16.0542782,6.7704982 C16.9829647,11.1315788 14.1824562,15.4160041 9.79823305,16.3402239 C5.41400989,17.2640082 1.10684887,14.4778469 0.177724576,10.1172018 C-0.750961864,5.75612121 2.04998446,1.47169594 6.43376977,0.547476117 C10.8179929,-0.376743708 15.125154,2.40941757 16.0542782,6.7704982" fill="#509bf5"></path>
+                                        <path d="M84.587572,105.080571 C65.853589,109.029194 47.4488715,97.1236569 43.4788573,78.4889985 C39.5088432,59.85434 51.4775579,41.546338 70.2111031,37.5972799 C88.9450862,33.6482219 107.350242,45.5537586 111.319818,64.1888526 C115.289832,82.823511 103.321117,101.131078 84.587572,105.080571 Z" fill="#509bf5"></path>
+                                        <path d="M154.236691,26.5149173 C156.661521,37.8964972 149.351564,49.0781633 137.909586,51.4901941 C126.467609,53.9017894 115.226606,46.6308536 112.802213,35.2492738 C110.377383,23.8676939 117.68734,12.6855922 129.129318,10.2739969 C140.571295,7.8619661 151.812298,15.1333374 154.236691,26.5149173" fill="#000"></path>
+                                    </g>
+                                    <path d="M140.885603,102.831431 L141.876777,76.5730126 L110.839898,81.612584 L109.607161,114.259084 C109.620666,114.511051 109.622812,114.765835 109.613113,115.022912 C109.440531,119.597086 105.582713,123.166176 100.996653,122.994025 C96.4105918,122.821439 92.8330024,118.97369 93.0060201,114.399081 C93.1781663,109.824473 97.0364193,106.255817 101.622044,106.427968 C103.763856,106.50857 105.685707,107.390871 107.108313,108.774408 L108.162291,80.8518045 L108.162576,80.8518153 L108.5377,70.9205168 L145,65 L144.623083,74.9787561 L144.642808,74.9794987 L143.355416,109.084962 C143.162848,113.641419 139.314086,117.189975 134.74022,117.018298 C130.154595,116.845713 126.577005,112.997963 126.750023,108.423355 C126.922169,103.84918 130.779986,100.28009 135.366047,100.452241 C137.524711,100.533477 139.459841,101.429077 140.885603,102.831431 Z" fill="#509bf5"></path>
+                                    <path d="M131.093422,179.458265 L115.375524,150 L113,151.236816 L125.915331,175.442184 C124.082148,174.996331 122.082783,175.186665 120.281159,176.12444 C116.377233,178.157174 114.880205,182.930469 116.938394,186.786112 C118.996135,190.642198 123.829205,192.120268 127.73358,190.087977 C131.626712,188.060863 133.126237,183.308324 131.093337,179.458309 Z" fill="#fff"></path>
+                                    <path d="M186.493018,130.377701 L173.520834,137.86263 C172.844859,138.252783 172,137.765423 172,136.985559 L172,122.014818 C172,121.234954 172.844859,120.747152 173.520834,121.137305 L186.493018,128.622676 C187.168994,129.012387 187.168994,129.987548 186.493018,130.377701" fill="#fff"></path>
+                                </g>
+                            </g>
+                        </svg>
+                     </div>
+                <!--Texto beneficio-->
+                <h2 class="titulo-beneficio">
+                    Toque qualquer música.
+                </h2>
+                <p class="corpo-beneficio">Até no seu smartphone ou tablet.</p>
+            </div>
+            <div class="beneficios col-xs-12 col-sm-6 col-md-3">
+                <div class="benefit-image ">
+                    <svg width="100%" height="100%" viewBox="0 0 242 242" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g>
+                                <circle fill="#f8f8f8" cx="121" cy="121" r="121"></circle>
+                                <g transform="translate(51.000000, 50.000000)">
+                                    <path d="M126.724138,6.05678233e-05 L13.2758621,6.05678233e-05 C5.80215517,6.05678233e-05 0,5.82365678 0,13.3249817 L0,168.984288 C3.05646552,171.173209 6.39594828,173.74613 9.65517241,175.646748 C32.1058621,181.005789 48.1117241,184.000868 70.1780172,184.000868 C92.2425,184.000868 106.06931,183.384288 130.948276,175.848439 C134.208707,173.947215 136.942328,172.385777 140,170.195644 L140,13.9306599 C140,6.42933502 134.197241,6.05678233e-05 126.724138,6.05678233e-05" fill="#509bf5"></path>
+                                    <path d="M130.948276,36.3407546 L10.2586207,36.3407546 L10.2586207,175.848439 C28.0543103,186.225524 48.5401724,192.000061 70.6034483,192.000061 C92.667931,192.000061 113.151983,186.226736 130.948276,175.848439 L130.948276,36.3407546 Z" fill="#fff"></path>
+                                    <path d="M81.4655172,21.1987987 L59.7413793,21.1987987 C58.7414655,21.1987987 57.9310345,20.3853729 57.9310345,19.381764 C57.9310345,18.3781552 58.7414655,17.5647293 59.7413793,17.5647293 L81.4655172,17.5647293 C82.465431,17.5647293 83.2758621,18.3781552 83.2758621,19.381764 C83.2758621,20.3853729 82.465431,21.1987987 81.4655172,21.1987987" fill="#fff"></path>
+                                </g>
+                                <g transform="translate(82.000000, 125.000000)">
+                                    <path d="M77.0000602,38.5 C77.0000602,59.7628281 59.7628883,77 38.5000602,77 C17.237232,77 6.01562499e-05,59.7628281 6.01562499e-05,38.5 C6.01562499e-05,17.2371719 17.237232,0 38.5000602,0 C59.7628883,0 77.0000602,17.2371719 77.0000602,38.5" fill="#000"></path>
+                                    <path d="M23.1466812,52.5867891 C22.2268922,53.1179688 21.0773062,52.4544453 21.0773062,51.3920859 L21.0773062,26.8242734 C21.0773062,25.7619141 22.2268922,25.0983906 23.1466812,25.6289688 L44.4233453,37.9134766 C45.3431344,38.4446563 45.3431344,39.7717031 44.4233453,40.3028828 L23.1466812,52.5867891 Z" fill="#fff"></path>
+                                    <path d="M53.5390625,54.2664719 L53.5390625,54.2664719 C52.2102109,54.2664719 51.1328125,53.1890734 51.1328125,51.8602219 L51.1328125,25.9930344 C51.1328125,24.6641828 52.2102109,23.5867844 53.5390625,23.5867844 L53.5390625,23.5867844 C54.8679141,23.5867844 55.9453125,24.6641828 55.9453125,25.9930344 L55.9453125,51.8602219 C55.9453125,53.1890734 54.8679141,54.2664719 53.5390625,54.2664719" fill="#fff"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <!--Texto beneficio-->
+                <h2 class="titulo-beneficio">
+                    Pule de faixas quantas vezes quiser.
+                </h2>
+                <p class="corpo-beneficio">É só clicar em Avançar.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+<!--Rodapé-->
+<footer id="rodape">
+    <div class="container">
+        <nav class="row">
+
+            <div class="col-md-2">
+                <span class="img-logo"></span>
+            </div>
+
+            <div class="col-md-2">
+                <h4 class="nav-title">Company</h4>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Empregos</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">Novidades</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <h4 class="nav-title">comunidades</h4>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Artistas</a></li>
+                    <li><a href="#">Desenvolvedores</a></li>
+                    <li><a href="#">Marcas</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <h4 class="nav-title">links uteis</h4>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Presentes</a></li>
+                    <li><a href="#">Player da Web</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="nav">
+                    <li class="item-rede-social"><a href=""><img src="imagens/facebook.png" alt=""></a></li>
+                    <li class="item-rede-social"><a href=""><img src="imagens/twitter.png" alt=""></a></li>
+                    <li class="item-rede-social"><a href=""><img src="imagens/instagram.png" alt=""></a></li>
+                </ul>
+            </div>
+
+        </nav> <!--row-->
+    </div>
+
+
+
+</footer>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!--<script type="text/javascript">
+        jQuery(function () {
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 70) {
+                    $("#navbar-transparente-premium").addClass("nav-escurece");
+                } else {
+                    $("#navbar-transparente-premium").removeClass("nav-escurece");
+                }
+            });
+        });
+    </script>-->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
